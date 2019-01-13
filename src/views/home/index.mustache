@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>WELCOME TO THE CHAT SERVER</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="application/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+    <script type="application/javascript">
+        function storage() {
+            let doc = document.querySelector("#username").value;
+            localStorage.setItem('username', doc);
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 offset-md-3 offset-lg-3">
+                <h1 class="text-center">MULTIROOM CHAT</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 offset-md-4 offset-lg-4">
+                <form method="get" enctype="multipart/form-data" action="http://localhost:8001/chat">
+                    <div class="form-group">
+                        <label for="username">Nome de Usuário</label>
+                        <input name="username" id="username" type="text" class="form-control"/>
+                    </div>
+                    <div class="row">
+                        <button onclick="storage()" type="submit" class="col-md-2 col-lg-2 offset-md-5 offset-lg-5 btn btn-primary btn-sm">Entrar</button>
+                    </div>
+                </form>
+            <div>
+        </div>
+    <div>
+</body>
+</html>
